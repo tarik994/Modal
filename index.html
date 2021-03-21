@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Advenced</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="app">
+   
+    <div ng-controller="mainController">
+        <button ng-click="modal.show = !modal.show">Launch Modal</button>
+        <div ng-show="modal.show" class='it-modal' ng-class="newClass">
+            <div class="icons">
+            <i class="far fa-window-minimize" ng-click='minimizeFunc()' ></i>    
+            <i class="far fa-window-maximize" ng-click="changeClass()"></i>
+            <i class="fas fa-times" ng-click="modal.show = !modal.show"></i>
+            </div>
+  
+            <div class="desc" ng-class="newClass">
+                <div>
+                <h3>Modal title</h3>
+
+                
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, eligendi. Animi quod quo eos sit harum qui rem consectetur eveniet cumque, nostrum, necessitatibus molestias debitis cum quasi quos atque libero! lore, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iure saepe debitis, corporis sunt unde facere voluptates ea illo. Libero doloremque culpa quo ipsa facere porro nesciunt quod. Ratione, asperiores! </p>
+                <div class="btns">
+                    <button class="do-som">Do something</button>
+                    <button class="ext-btn" ng-click="modal.show = !modal.show">Cancel</button>
+                </div>
+                
+                </div>
+            </div>
+           
+        </div>
+       
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

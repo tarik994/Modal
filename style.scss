@@ -1,0 +1,83 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(202, 195, 195);
+    
+}
+.it-modal{
+    position: absolute;
+    background-color: white;
+    width: 500px;
+    border: 1px solid gray;
+    border-radius: 2%;
+    padding: 10px;
+    box-shadow: -1px 5px 34px 7px rgba(161,147,147,0.75);
+-webkit-box-shadow: -1px 5px 34px 7px rgba(161,147,147,0.75);
+-moz-box-shadow: -1px 5px 34px 7px rgba(161,147,147,0.75);
+position: absolute;
+top: 50%;
+
+transform: translate(-50%,-50%);
+
+left: 50%;
+right: 50%;
+&.full-screan{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: unset;
+
+}
+&.minimized{
+    top: 95%;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 40px;
+    transform: unset;
+    overflow:hidden;
+    
+}
+.desc{
+    text-align: center;
+    justify-content: space-between;
+}
+.icons{
+    text-align: right;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btns{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    button{
+        padding: 5px;
+        margin: 5px;
+        cursor: pointer;
+        outline: none;
+        font-size: 1.2em;
+        pad: 3px;
+        
+    }
+    button:hover{
+        opacity: .6;
+    }
+    .do-som{
+        background-color: rgb(49, 49, 238);
+        color: white;
+        
+    }
+    .ext-btn{
+        background-color: rgb(150, 141, 141);
+        color: white;
+    
+    }
+}
+}
